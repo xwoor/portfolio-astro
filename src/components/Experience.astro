@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Ene. 2017 - Actualmente",
+    title: "Regional Manager, Content Operations",
+    company: "ContentBridge Systems, LLC",
+    description:
+      "Responsable de liderar las operaciones de distribución de contenido digital, actuando como punto de contacto principal entre equipos internos, externos y proveedores. Gestiono proyectos operativos garantizando cumplimiento de plazos, calidad y eficiencia en los procesos. Coordino el soporte técnico diario del equipo, colaboro estrechamente con desarrollo para mejorar sistemas internos, y superviso la ingesta, control de calidad y distribución de contenido a plataformas digitales (DSP).",
+    link: "https://contentbridge.tv/",
+  },
+  {
+    date: "Abr. 2027 - Actualmente",
+    title: "Co-Founder, web developer",
+    company: "Gang Graf",
+    description:
+      "En Gangraf, me especializo en la creación de soluciones web de alta calidad y alto rendimiento. Desarrollo sitios web a medida, centrados en la experiencia del usuario, con una fuerte atención al detalle en diseño y funcionalidad. Mi enfoque incluye tiendas virtuales, landing pages y proyectos a gran escala, optimizando la conversión y el rendimiento para ayudar a las marcas a destacarse en el mundo digital.",
+      link: "https://www.gangraf.com/",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
